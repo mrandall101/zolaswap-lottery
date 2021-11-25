@@ -1,0 +1,7 @@
+# WAGYUSWAP LOTTERY
+
+## TEST
+
+RandomNumberGenerator deployed to: 0x2944c7901fC47f2752782eF680E13b9232552052
+Random truster is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
+WagyuSwapLottery deployed to: 0x446A1f0C954Fe2CfA42aA897fa1C7F563e0f7682

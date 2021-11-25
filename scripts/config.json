@@ -1,0 +1,16 @@
+{
+  "velas": {
+    "randomTruster": "0x3812d358fd62667Db446E2B895422b762bAB690f",
+    "wag": "0xaBf26902Fd7B624e0db40D31171eA9ddDf078351",
+    "operator": "",
+    "treasury": "",
+    "injector": ""
+  },
+  "velasTest": {
+    "randomTruster": "0x3812d358fd62667Db446E2B895422b762bAB690f",
+    "wag": "0xb830d8213e2c3dD621037703D05A5e594387B6Be",
+    "operator": "0x3812d358fd62667Db446E2B895422b762bAB690f",
+    "treasury": "0x3812d358fd62667Db446E2B895422b762bAB690f",
+    "injector": "0x3812d358fd62667Db446E2B895422b762bAB690f"
+  }
+}
