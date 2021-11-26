@@ -2,6 +2,9 @@
 
 ## TEST
 
-RandomNumberGenerator deployed to: 0x2944c7901fC47f2752782eF680E13b9232552052
+RandomNumberGenerator deployed to: 0x6c59f5b97E2D88af81F83C82e4A445BaDbf9b119
 Random truster is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
-WagyuSwapLottery deployed to: 0x446A1f0C954Fe2CfA42aA897fa1C7F563e0f7682
+WagyuSwapLottery deployed to: 0x475320d2d9E620D97823570c877ad20ce5CD4A3f
+WagyuSwapLottery operator is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
+WagyuSwapLottery treasury is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
+WagyuSwapLottery injector is set to 0x3812d358fd62667Db446E2B895422b762bAB690f

@@ -19,6 +19,16 @@ contract RandomNumberGenerator is IRandomNumberGenerator, Ownable {
 
     mapping(address => bool) public isTruster;
 
+    function asciiToInteger(bytes32 x) public pure returns (uint256) {
+        uint256 y;
+        for (uint256 i = 0; i < 32; i++) {
+            uint256 c = (uint256(x) >> (i * 8)) & 0xff;
+            if (48 <= c && c <= 57) y += (c - 48) * 10**i;
+            else break;
+        }
+        return y;
+    }
+
     /**
      * @notice Request randomness from a user-provided seed
      * @param _seed: seed provided by the PancakeSwap lottery
@@ -57,9 +67,11 @@ contract RandomNumberGenerator is IRandomNumberGenerator, Ownable {
     /**
      * @notice Callback function used by ChainLink's VRF Coordinator
      */
-    function fulfillRandomness(uint256 randomness) external {
+    function fulfillRandomness() external {
         require(isTruster[msg.sender], "Not truster");
-        randomResult = uint32(1000000 + (randomness % 1000000));
+
+        uint256 random = (seed % 1000000) * (asciiToInteger(blockhash(block.number)) % 1000000);
+        randomResult = uint32(1000000 + (random % 1000000));
         latestLotteryId = IWagyuSwapLottery(wagyuSwapLottery).viewCurrentLotteryId();
     }
 }
