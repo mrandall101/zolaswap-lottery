@@ -7,10 +7,10 @@
     "injector": ""
   },
   "velasTest": {
-    "randomTruster": "0x3812d358fd62667Db446E2B895422b762bAB690f",
+    "randomTruster": "0xB3dEdba884b52ADf1497E6f632cae04013DF0737",
     "wag": "0xb830d8213e2c3dD621037703D05A5e594387B6Be",
-    "operator": "0x3812d358fd62667Db446E2B895422b762bAB690f",
-    "treasury": "0x3812d358fd62667Db446E2B895422b762bAB690f",
-    "injector": "0x3812d358fd62667Db446E2B895422b762bAB690f"
+    "operator": "0xB3dEdba884b52ADf1497E6f632cae04013DF0737",
+    "treasury": "0xB3dEdba884b52ADf1497E6f632cae04013DF0737",
+    "injector": "0xB3dEdba884b52ADf1497E6f632cae04013DF0737"
   }
 }

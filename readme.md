@@ -2,9 +2,6 @@
 
 ## TEST
 
-RandomNumberGenerator deployed to: 0x6c59f5b97E2D88af81F83C82e4A445BaDbf9b119
-Random truster is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
-WagyuSwapLottery deployed to: 0x475320d2d9E620D97823570c877ad20ce5CD4A3f
-WagyuSwapLottery operator is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
-WagyuSwapLottery treasury is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
-WagyuSwapLottery injector is set to 0x3812d358fd62667Db446E2B895422b762bAB690f
+RandomNumberGenerator: [0x088873Bbd63E4EE3C98703CfE9605A51d08Ec1dc](https://evmexplorer.testnet.velas.com/address/0x088873Bbd63E4EE3C98703CfE9605A51d08Ec1dc)
+
+WagyuLottery: [0x62871cf7b1d356f965734d7EBDEBADB482d7ee11](https://evmexplorer.testnet.velas.com/address/0x62871cf7b1d356f965734d7EBDEBADB482d7ee11)
