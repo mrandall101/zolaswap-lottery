@@ -36,6 +36,8 @@ async function main(): Promise<void> {
 
   console.log("WagyuSwapLottery deployed to:", wagyuSwapLottery.address);
 
+  await randomNumberGenerator.setLotteryAddress(wagyuSwapLottery.address);
+
   await wagyuSwapLottery.setOperatorAndTreasuryAndInjectorAddresses(params.operator, params.treasury, params.injector);
   console.log("WagyuSwapLottery operator is set to", params.operator);
   console.log("WagyuSwapLottery treasury is set to", params.treasury);
