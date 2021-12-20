@@ -600,15 +600,7 @@ contract RandomNumberGenerator is IRandomNumberGenerator, Ownable {
     mapping(address => bool) public isTruster;
 
     function asciiToInteger(bytes32 x) public pure returns (uint256) {
-        uint256 y;
-        for (uint256 i = 0; i < 32; i++) {
-            uint256 c = (uint256(x) >> (i * 8)) & 0xff;
-            if (48 <= c && c <= 57) y += (c - 48) * 10**i;
-            else if (65 <= c && c <= 90) y += (c - 65 + 10) * 10**i;
-            else if (97 <= c && c <= 122) y += (c - 97 + 10) * 10**i;
-            else break;
-        }
-        return y;
+        return uint256(x);
     }
 
     /**
