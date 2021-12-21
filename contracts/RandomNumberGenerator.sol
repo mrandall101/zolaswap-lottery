@@ -19,6 +19,8 @@ contract RandomNumberGenerator is IRandomNumberGenerator, Ownable {
 
     mapping(address => bool) public isTruster;
 
+    event Fullfilled(uint256 random, uint256 randomResult);
+
     function asciiToInteger(bytes32 x) public pure returns (uint256) {
         return uint256(x);
     }
@@ -66,7 +68,7 @@ contract RandomNumberGenerator is IRandomNumberGenerator, Ownable {
     function fulfillRandomness() external {
         require(isTruster[msg.sender], "Not truster");
 
-        uint256 random = (seed % 1000000) * (asciiToInteger(blockhash(block.number)) % 1000000);
+        uint256 random = (seed % 1000000) * (asciiToInteger(blockhash(block.number - 1)) % 1000000);
         randomResult = uint32(1000000 + (random % 1000000));
         latestLotteryId = IWagyuSwapLottery(wagyuSwapLottery).viewCurrentLotteryId();
     }
