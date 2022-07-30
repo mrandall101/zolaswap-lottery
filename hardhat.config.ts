@@ -18,8 +18,8 @@ dotenvConfig({ path: resolve(__dirname, "./.env") });
 
 const chainIds = {
   hardhat: 31337,
-  velas: 106,
-  velasTest: 111,
+  polygon: 137,
+  polygonTest: 80001,
 };
 
 // Ensure that we have all the environment variables we need.
@@ -40,15 +40,15 @@ const config: HardhatUserConfig = {
   },
   networks: {
     hardhat: {},
-    velas: {
+    polygon: {
       accounts: [PRIVATEKEY],
-      url: "https://evmexplorer.velas.com/rpc",
-      chainId: chainIds.velas,
+      url: "https://polygon-rpc.com",
+      chainId: chainIds.polygon,
     },
-    velasTest: {
+    polygonTest: {
       accounts: [PRIVATEKEY],
       url: "https://testnet.velas.com/rpc/",
-      chainId: chainIds.velasTest,
+      chainId: chainIds.polygonTest,
     },
   },
   paths: {

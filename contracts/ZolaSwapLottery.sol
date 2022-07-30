@@ -10,13 +10,13 @@ import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 import "./interfaces/IRandomNumberGenerator.sol";
-import "./interfaces/IWagyuSwapLottery.sol";
+import "./interfaces/IZolaSwapLottery.sol";
 
 /** @title PancakeSwap Lottery.
  * @notice It is a contract for a lottery system using
  * randomness provided externally.
  */
-contract WagyuSwapLottery is ReentrancyGuard, IWagyuSwapLottery, Ownable {
+contract ZolaSwapLottery is ReentrancyGuard, IZolaSwapLottery, Ownable {
     using SafeERC20 for IERC20;
 
     address public injectorAddress;

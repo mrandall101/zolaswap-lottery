@@ -4,7 +4,8 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.1.0",
     "@openzeppelin/contracts-upgradeable": "^4.1.0",
-    "hardhat-contract-sizer": "^2.1.1"
+    "hardhat-contract-sizer": "^2.1.1",
+    "harhat": "^1.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
